@@ -1,7 +1,11 @@
 class Bob{
     constructor(x,y){
         var options = {
-            frictionAir :0
+            frictionAir :0,
+            isStatic :false,
+            restitution :1,
+            friction :0,
+            density: 0.001
         }
         this.body =Bodies.circle(x,y,17,options);
         this.width =35;
